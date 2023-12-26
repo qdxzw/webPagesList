@@ -1,9 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./images/logo.ico" />
+    <title>简易官网</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <!-- 引入图标的 css 文件 -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./bootstrap-icons-1.11.2/font/bootstrap-icons.css"
+    />
+    <!-- 引入自己的 css 文件 -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
-  <body></body>
+  <body>
+    ​
+    <div class="container">
+      <!-- 网页头部  导航-->
+      <!-- 一行有12列 设置大屏幕一次占列，小屏幕一次占6列 -->
+      <div class="header">
+        <!-- 导航页面 -->
+        <nav class="navbar navbar-default nav row" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header col-md-3">
+              <button
+                type="button"
+                class="navbar-toggle"
+                data-toggle="collapse"
+                data-target="#example-navbar-collapse"
+              >
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand logo" href="#"
+                ><img
+                  class="img-responsive logo"
+                  alt="Cinque Terre"
+                  src="./images/logo.png"
+                />
+              </a>
+            </div>
+            <div
+              class="collapse navbar-collapse col-md-6"
+              id="example-navbar-collapse"
+            >
+              <ul class="nav navbar-nav">
+                <li>
+                  <a
+                    href="https://blog.csdn.net/weixin_51591826?spm=1010.2135.3001.5343"
+                    target="_blank"
+                    >home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://blog.csdn.net/weixin_51591826?spm=1010.2135.3001.5343"
+                    target="_blank"
+                    >通用采集器</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://blog.csdn.net/weixin_51591826?spm=1010.2135.3001.5343"
+                    target="_blank"
+                    >数据模型</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://blog.csdn.net/weixin_51591826?spm=1010.2135.3001.5343"
+                    target="_blank"
+                    >数据分析</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://blog.csdn.net/weixin_51591826?spm=1010.2135.3001.5343"
+                    target="_blank"
+                    >数据仓库</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://blog.csdn.net/weixin_51591826?spm=1010.2135.3001.5343"
+                    target="_blank"
+                    >utils</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <ul class="nav navbar-nav col-md-3">
+              <li>
+                <a
+                  href="https://blog.csdn.net/weixin_51591826?spm=1010.2135.3001.5343"
+                  target="_blank"
+                  ><span class="glyphicon bi bi-person-plus"></span> 注册</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://blog.csdn.net/weixin_51591826?spm=1010.2135.3001.5343"
+                  target="_blank"
+                  ><span class="glyphicon bi bi-person-square"></span> 登录</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!--网页头部  轮播 -->
+      <div class="main">
+        <div
+          id="myCarousel"
+          class="carousel slide"
+          data-interval="2000"
+          data-pause="hover"
+          data-wrap="true"
+        >
+          <!-- 轮播（Carousel）指标 -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+          </ol>
+          <!-- 轮播（Carousel）项目 -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="./images/01.jpg" alt="First slide" />
+              <div class="carousel-caption">第一张</div>
+            </div>
+            <div class="item">
+              <img src="./images/02.jpg" alt="Second slide" />
+              <div class="carousel-caption">第二张</div>
+            </div>
+            <div class="item">
+              <img src="./images/03.jpg" alt="Third slide" />
+              <div class="carousel-caption">第三张</div>
+            </div>
+            <div class="item">
+              <img src="./images/04.jpg" alt="Fourth slide" />
+              <div class="carousel-caption">第四张</div>
+            </div>
+            <div class="item">
+              <img src="./images/05.jpg" alt="Fifth slide" />
+              <div class="carousel-caption">第五张</div>
+            </div>
+            <div class="item">
+              <img src="./images/06.jpg" alt="Third slide" />
+              <div class="carousel-caption">第六张</div>
+            </div>
+          </div>
+          <!-- 轮播（Carousel）导航 -->
+          <a
+            class="left carousel-control"
+            href="#myCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span
+              class="glyphicon glyphicon-chevron-left bi bi-skip-start"
+              aria-hidden="true"
+            ></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="right carousel-control"
+            href="#myCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <span
+              class="glyphicon glyphicon-chevron-right bi bi bi-skip-end"
+              aria-hidden="true"
+            ></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <!--网页尾部  -->
+      <div class="footer">
+        <div class="row">
+          <div class="col-md-3">
+            <h2>ajython介绍</h2>
+            <p>
+              Python是一种解释型、面向对象、动态数据类型的高级程序设计语言。Python由荷兰人吉多·范罗苏姆于1989年发明，第一个公开发行版发行于1991年。Python的设计哲学是“优雅、明确、简单”。Python的语法简洁清晰，易于学习，支持多种编程范式，拥有强大的标准库和丰富的第三方库，可以满足各种领域的需求。
+              Python的应用领域非常广泛，包括Web开发、数据科学、人工智能、机器学习、网络爬虫、自动化运维、游戏开发等领域。Python的强大功能和灵活性使得它成为一种非常受欢迎的编程语言，被广泛应用于各种领域。
+              总之，Python是一种强大、灵活、易用的编程语言，可以满足各种需求，是开发者的首选之一。
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h2>关于我们</h2>
+            <p>
+              猫咪是一种常见的宠物，它们以其可爱、温顺和亲人的性格而受到人们的喜爱。猫咪是哺乳动物，属于猫科动物，通常分为家猫和野生猫两大类。
+              猫咪通常具有非常敏锐的听觉和嗅觉，这使它们能够轻松地探测到周围环境中的声音和气味。同时，猫咪还有锋利的爪子和牙齿，以及灵活的身体和快速的反应能力，这使它们成为优秀的捕食者。
+              猫咪是独居动物，通常只在发情期或哺育幼猫时才会与其他猫交往。它们喜欢干净，经常清理自己的毛发，并保持身体整洁。此外，猫咪也有很高的警惕性，对周围的环境保持警觉，一旦发现异常情况就会立即采取行动。
+              作为宠物，猫咪可以与人类建立亲密的关系，并且可以通过训练学会各种技能和习惯。同时，猫咪也是非常适合家庭饲养的宠物之一，因为它们需要的护理和关注相对较少，且能够为家庭带来很多欢乐和乐趣。
+            </p>
+          </div>
+          <div class="col-md-3 contact">
+            <h2>联系我们</h2>
+            <div class="contact-info">
+              <p>微信：123456789</p>
+              <p>手机号：13800138000</p>
+              <p>公众号：公众号名称</p>
+            </div>
+            <p>
+              通常您需要先确定您想与哪个具体的网站或公司进行联系。由于存在众多类似淘宝的电商平台，您可以通过搜索引擎或相关行业的网站来查找这些平台的联系方式。
+              通常，这些电商平台都会在其官方网站上提供联系方式，如客服电话、电子邮件地址或在线聊天工具等。您可以通过这些方式与平台的客服或业务人员进行沟通，了解更多关于平台的信息，或寻求合作机会。
+              另外，您也可以通过行业展会、论坛等渠道，与其他电商平台的相关人员进行交流，以拓展业务联系和合作机会。
+              请注意，在联系任何机构或平台之前，建议您先了解其背景和信誉，以避免不必要的风险和麻烦。
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h2>其他介绍</h2>
+            <p>
+              可爱：猫咪的外貌特征，如圆圆的大眼睛、柔软的毛发、灵活的造型等，让它们看起来非常可爱。
+              独立：与狗相比，猫咪更为独立，它们可以自己梳理毛发、上厕所、寻找食物等，不需要太多的人类帮助。
+              安静：猫咪的叫声相对较小，不会打扰到周围的人，因此更适合生活在公寓等空间较小的环境中。
+              温顺：大多数猫咪都很温顺，与人类相处融洽，可以成为人类的伴侣动物。
+              减压：据研究表明，和猫咪相处可以降低人的压力水平，缓解焦虑和抑郁等情绪问题。
+              优秀的猎手：猫咪是天生的猎手，它们的优秀猎鼠能力经常让人们感到惊奇。
+              经济实惠：相比其他的宠物，猫咪的经济收养成本是较低的。非常容易获得，所需费用也不高，这就让许多人可能会考虑养一只猫咪。
+              被认为有灵性：在许多文化中，猫咪都被赋予了神秘、迷信等等的属性。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        // 初始化轮播图
+        $('#myCarousel').carousel()
+      })
+    </script>
+  </body>
 </html>

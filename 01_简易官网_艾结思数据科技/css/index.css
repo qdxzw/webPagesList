@@ -1,0 +1,58 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background-image: linear-gradient(
+    to left,
+    rgb(253, 154, 67),
+    rgb(245, 202, 155)
+  );
+}
+.container {
+  margin-top: -20px;
+  padding-right: 0px;
+  padding-left: 0px;
+  text-align: center;
+}
+.header {
+  overflow: hidden;
+}
+.nav {
+  background-color: #131918;
+  border: 0px;
+  font-size: 16px;
+}
+.logo {
+  display: flex;
+  /* 实现水平方向上居中 */
+  justify-content: left;
+  /* 实现垂直方向居中 */
+  align-items: center;
+}
+.logo img {
+  width: 60%;
+}
+.main {
+  margin-top: -20px;
+}
+
+.footer .row div {
+  cursor: pointer;
+}
+.contact-info {
+  display: none;
+  position: absolute;
+  top: -25%;
+  left: 42%;
+  transform: translateX(-50%);
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+}
+.contact {
+  position: relative;
+}
+.contact:hover .contact-info {
+  display: block;
+}
